@@ -13,8 +13,8 @@ pipeline {
             steps {
                 script {
                     // Run the shell script directly from the repository
-                    sh 'chmod +x test.sh'
-                    sh './test.sh'  // Adjust the path to the script in the repo
+                    steps.echo "I am inside feature branch"
+                    sh 'ls -l'  // Adjust the path to the script in the repo
                 }
             }
         }
